@@ -13,21 +13,23 @@ console.log(becauseArr.length);
 // 重要
 const sentence3 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 let pattern3 = /[%$@&#;!]/g
-let cleanSentence = sentence3.replace(pattern3,'')
+let cleanSentence = sentence3.replace(pattern3, '')
 console.log(cleanSentence)
 let words = cleanSentence.split(/\s/)
 console.log(words)
 let wordFrenquencies = new Map()
 words.forEach(element => {
-    if(!wordFrenquencies.has(element)){
-        wordFrenquencies.set(element,1)
-    }else{
-        wordFrenquencies.set(element,wordFrenquencies.get(element)+1)
+    if (!wordFrenquencies.has(element)) {
+        wordFrenquencies.set(element, 1)
+    } else {
+        wordFrenquencies.set(element, wordFrenquencies.get(element) + 1)
     }
 });
 console.log(wordFrenquencies)
 let maxFrequency = Math.max(...wordFrenquencies.values())
-let wordsMatchingMaxFrequency = Array.from(wordFrenquencies.keys()).filter((word)=>{return wordFrenquencies.get(word)==maxFrequency})
+let wordsMatchingMaxFrequency = Array.from(wordFrenquencies.keys()).filter((word) => {
+    return wordFrenquencies.get(word) == maxFrequency
+})
 console.log(wordsMatchingMaxFrequency)
 
 // 5. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
@@ -37,5 +39,5 @@ let subIncome = incomeSentence.match(incomePattern)
 let salaryPerMonth = Number(subIncome[0])
 let annual = Number(subIncome[1])
 let salaryCourse = Number(subIncome[2])
-let total = salaryPerMonth * 12 + annual + salaryCourse*12
+let total = salaryPerMonth * 12 + annual + salaryCourse * 12
 console.log(total)

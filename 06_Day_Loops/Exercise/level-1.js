@@ -189,8 +189,8 @@ let numArr = [...Array(10).keys()].map(i => String(i))
 let arr = numArr.concat(charArr)
 let total = arr.length
 let randomCharNumStr = ''
-for(let i=0;i<6;i++){
-    let rando = Math.floor(Math.random()*total)
-    randomCharNumStr+= arr[rando]
+for (let i = 0; i < 6; i++) {
+    let rando = Math.floor(Math.random() * total)
+    randomCharNumStr += arr[rando]
 }
 console.log(randomCharNumStr)

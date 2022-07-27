@@ -1,6 +1,5 @@
-
 // 1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
-let challenge  = '30 Days Of JavaScript'
+let challenge = '30 Days Of JavaScript'
 // 2. Print the string on the browser console using console.log()
 console.log(challenge)
 // 3. Print the length of the string on the browser console using console.log()
@@ -10,10 +9,10 @@ console.log(challenge.toUpperCase())
 // 5. Change all the string characters to lowercase letters using toLowerCase() method
 console.log(challenge.toLowerCase())
 // 6. Cut (slice) out the first word of the string using substr() or substring() method
-console.log(challenge.substr(0,2))
-console.log(challenge.substring(0,2))
+console.log(challenge.substr(0, 2))
+console.log(challenge.substring(0, 2))
 // 7. Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
-console.log(challenge.substring(3,challenge.length-1))
+console.log(challenge.substring(3, challenge.length - 1))
 // 8. Check if the string contains a word Script using includes() method
 console.log(challenge.includes('Script'))
 // 9. Split the string into an array using split() method
@@ -24,7 +23,7 @@ console.log(challenge.split(' '))
 let test_str = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
 console.log(test_str.split(', '))
 // 12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
-console.log(challenge.replace('JavaScript','Python'))
+console.log(challenge.replace('JavaScript', 'Python'))
 // 13. What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
 console.log(challenge.charAt(15))
 // 14. What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
@@ -56,4 +55,3 @@ console.log(challenge.match(pattern))
 console.log('30 Days of '.concat('Javascript'))
 // 25. Use repeat() method to print 30 Days Of JavaScript 2 times
 console.log(challenge.repeat(2))
-

@@ -7,9 +7,9 @@
 // You are left with 3 years to drive.
 
 let age = prompt("Enter your age:")
-if (age > 18){
+if (age > 18) {
     console.log("You are old enough to drive")
-}else{
+} else {
     console.log(`You are left with ${18 - age} years to drive.`)
 }
 
@@ -20,9 +20,9 @@ if (age > 18){
 
 let yourAge = prompt("Enter your age:")
 let myAge = 26
-if (yourAge > myAge){
+if (yourAge > myAge) {
     console.log(`You are ${yourAge-myAge} older than me`)
-}else{
+} else {
     console.log(`I am  ${myAge-yourAge} older than you`)
 }
 // 3. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
@@ -32,11 +32,11 @@ if (yourAge > myAge){
 //   let a = 4
 //   let b = 3
 //   4 is greater than 3
-let a = 4 
-let b = 3 
-if(a>b){
+let a = 4
+let b = 3
+if (a > b) {
     console.log('a is greater than b')
-}else{
+} else {
     console.log('b is greater tha a')
 }
 a > b ? console.log('a is greater than b') : console.log('b is greater than a')
@@ -48,8 +48,8 @@ a > b ? console.log('a is greater than b') : console.log('b is greater than a')
 // Enter a number: 9
 // 9 is is an odd number.
 let number = prompt("Enter  a number: ")
-if (number % 2 ==0){
+if (number % 2 == 0) {
     console.log(`${number} is an even number`)
-}else{
+} else {
     console.log(`'${number} is an odd number`)
 }

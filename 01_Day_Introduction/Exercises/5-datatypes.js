@@ -1,4 +1,4 @@
-let num1 = 100 
+let num1 = 100
 let num2 = 3.14
 let country = 'China'
 let honest = true

@@ -7,16 +7,16 @@ let month = date.getMonth() + 1
 let days = date.getDate()
 let hours = date.getHours()
 let minutes = date.getMinutes()
-if (month < 10){
+if (month < 10) {
     month = `0${month}`
 }
-if (days < 10){
+if (days < 10) {
     days = `0${days}`
 }
-if (hours < 10){
+if (hours < 10) {
     hours = `0${hours}`
 }
-if (minutes < 10){
+if (minutes < 10) {
     minutes = `0${minutes}`
 }
 console.log(`${year}-${month}-${days} ${hours}:${minutes}`)

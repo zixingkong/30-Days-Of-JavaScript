@@ -51,8 +51,8 @@ let rate = prompt("Enter rate per hours: ")
 let earn = hours * rate
 console.log(`Your weekly earing is ${earn}`)
 // 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
-let myName  = 'harveyy'
-myName.length > 7 ? console.log('your name is long'): console.log('your name is short.')
+let myName = 'harveyy'
+myName.length > 7 ? console.log('your name is long') : console.log('your name is short.')
 
 // 11. Compare your first name length and your family name length and you should get this output.
 // let firstName = 'Asabeneh'
@@ -60,7 +60,7 @@ myName.length > 7 ? console.log('your name is long'): console.log('your name is 
 // Your first name, Asabeneh is longer than your family name, Yetayeh
 let firstName = 'Asabeneh'
 let lastName = 'Yetayeh'
-if (firstName.length > lastName.length){
+if (firstName.length > lastName.length) {
     console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`)
 }
 // 12. Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
@@ -68,7 +68,7 @@ if (firstName.length > lastName.length){
 // let yourAge = 25
 // I am 225 years older than you.
 let myAge = 250
-let yourAge = 25 
+let yourAge = 25
 console.log(`I am ${myAge-yourAge} years older than you.`)
 // 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 // Enter birth year: 1995
@@ -79,16 +79,16 @@ console.log(`I am ${myAge-yourAge} years older than you.`)
 let birth = prompt("Enter birth: ")
 let nowYear = new Date().getFullYear()
 let age = nowYear - birth
-if (age > 18){
+if (age > 18) {
     console.log(`You are ${age}. You are old enough to drive`)
-}else{
+} else {
     console.log(`You are ${age}. You will be allowed to drive after ${18-age} years.`)
 }
 // 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 // Enter number of years you live: 100
 // You lived 3153600000 seconds.
 let years = prompt("Enter number of years you live: ")
-let seconds = years * 365 * 24 * 3600 
+let seconds = years * 365 * 24 * 3600
 console.log(`You lived ${seconds} seconds.`)
 // 15. Create a human readable time format using the Date time object
 // YYYY-MM-DD HH:mm
@@ -100,10 +100,10 @@ let month = date.getMonth() + 1
 let days = date.getDate()
 let hours2 = date.getHours()
 let minutes = date.getMinutes()
-if (month < 10){
+if (month < 10) {
     month = `0${month}`
 }
-if (days < 10){
+if (days < 10) {
     days = `0${days}`
 }
 console.log(`${year}-${month}-${days} ${hours2}:${minutes}`)

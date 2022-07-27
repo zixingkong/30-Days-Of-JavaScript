@@ -20,7 +20,7 @@ const countries = [
     'Benin',
     'Bhutan',
     'Bolivia',
-    'Bosnia and Herzegovina', 
+    'Bosnia and Herzegovina',
     'Botswana',
     'Brazil',
     'Brunei',

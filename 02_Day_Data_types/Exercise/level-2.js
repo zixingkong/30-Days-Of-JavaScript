@@ -18,21 +18,21 @@ console.log('jargon'.includes('on'))
 console.log('I hope this course is not full of jargon.'.includes('jargon'))
 // 7. Generate a random number between 0 and 100 inclusively.
 let randomNumber = Math.random()
-let numBtnZeroAndHundred = randomNumber * 101 
+let numBtnZeroAndHundred = randomNumber * 101
 console.log(numBtnZeroAndHundred)
 let randomNumRoundToFloor = Math.floor(numBtnZeroAndHundred)
 console.log(randomNumRoundToFloor)
 // 8. Generate a random number between 50 and 100 inclusively.
-let randomNumRoundToFloor2 = randomNumRoundToFloor-50 
+let randomNumRoundToFloor2 = randomNumRoundToFloor - 50
 // 9. Generate a random number between 0 and 255 inclusively.
-let numBtnZeroAndHundred2 = randomNumber * 256 
+let numBtnZeroAndHundred2 = randomNumber * 256
 console.log(numBtnZeroAndHundred2)
 let randomNumRoundToFloor3 = Math.floor(numBtnZeroAndHundred2)
 console.log(randomNumRoundToFloor3)
 // 10. Access the 'JavaScript' string characters using a random number.
 let strLen = 'JavaScript'.length
-let index = Math.floor(Math.random()*strLen)
-console.log('JavaScript'[index])
+let index = Math.floor(Math.random() * strLen)
+console.log('JavaScript' [index])
 // 11. Use console.log() and escape characters to print the following pattern.
 console.log('1\t1\t1\t1\t1')
 console.log('2\t1\t2\t4\t8')

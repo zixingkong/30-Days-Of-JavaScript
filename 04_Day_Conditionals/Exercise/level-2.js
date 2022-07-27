@@ -7,15 +7,15 @@
 // 0-49, F
 let score = 90
 let grades
-if(score>80){
+if (score > 80) {
     grades = 'A'
-}else if(score>70){
+} else if (score > 70) {
     grades = 'B'
-}else if(score>60){
+} else if (score > 60) {
     grades = 'C'
-}else if(score>50){
+} else if (score > 50) {
     grades = 'D'
-}else{
+} else {
     grades = 'F'
 }
 
@@ -25,7 +25,7 @@ if(score>80){
 // March, April or May, the season is Spring
 // June, July or August, the season is Summer
 let season = prompt("Enter season:")
-switch(season){
+switch (season) {
     case 'September':
     case 'October':
     case 'November':
@@ -62,9 +62,11 @@ switch(season){
 //     What is the day today? FrIDAy
 //     Friday is a working day.
 let today = prompt("What is the day today? ")
-let todayUpper = today.toLowerCase().replace(/^\S/g,function(s){return s.toUpperCase()})
+let todayUpper = today.toLowerCase().replace(/^\S/g, function (s) {
+    return s.toUpperCase()
+})
 console.log(todayUpper)
-switch (todayUpper){
+switch (todayUpper) {
     case 'Monday':
     case 'Tuesday':
     case 'Wednesday':

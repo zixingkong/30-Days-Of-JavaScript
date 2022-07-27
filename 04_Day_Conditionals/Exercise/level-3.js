@@ -13,7 +13,9 @@
 //   February has 28 days.
 // Write a program which tells the number of days in a month, now consider leap year.
 let month = prompt('Enter a month: ')
-month = month.toLowerCase().replace(/^\S/g,function(s){return s.toUpperCase()})
+month = month.toLowerCase().replace(/^\S/g, function (s) {
+    return s.toUpperCase()
+})
 let monthObi = {
     "January": 1,
     "February": 2,
@@ -29,5 +31,5 @@ let monthObi = {
     "December": 12
 
 }
-const date = new Date(2022,monthObi[month],0).getDate();
+const date = new Date(2022, monthObi[month], 0).getDate();
 console.log(`${month} has ${date} days`)

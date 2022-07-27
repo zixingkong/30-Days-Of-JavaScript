@@ -10,7 +10,7 @@
 // ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
 // 13
 let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-let textReplace = text.replace(/[,.]/g,'')
+let textReplace = text.replace(/[,.]/g, '')
 console.log(textReplace)
 let textArr = textReplace.split(' ')
 console.log(textArr)
@@ -23,30 +23,34 @@ console.log(textArr.length)
 // remove 'Honey' if you are allergic to honey
 // modify Tea to 'Green Tea'
 const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
-if (!shoppingCart.includes('Meat')){
+if (!shoppingCart.includes('Meat')) {
     shoppingCart.unshift('Meat')
 }
 console.log(shoppingCart)
-if (!shoppingCart.includes('Sugar')){
+if (!shoppingCart.includes('Sugar')) {
     shoppingCart.push('Sugar')
 }
 console.log(shoppingCart)
 let honeyIndex = shoppingCart.indexOf('Honey')
 console.log(honeyIndex)
-shoppingCart.splice(honeyIndex,1)
+shoppingCart.splice(honeyIndex, 1)
 console.log(shoppingCart)
 let teaIndex = shoppingCart.indexOf('Tea')
 shoppingCart[teaIndex] = 'Green Tea'
 console.log(shoppingCart)
 // 4. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-const {countries} = require('./countries.js')
+const {
+    countries
+} = require('./countries.js')
 console.log(countries)
 // 5. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
-const {webTechs} = require('./web_techs.js')
+const {
+    webTechs
+} = require('./web_techs.js')
 console.log(webTechs)
-if(webTechs.includes('SaaS')){
+if (webTechs.includes('SaaS')) {
     console.log('Sass is a CSS preprocess')
-}{
+} {
     webTechs.push('Sass')
     console.log(webTechs)
 }
@@ -60,6 +64,6 @@ if(webTechs.includes('SaaS')){
 // ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-const backEnd = ['Node','Express', 'MongoDB']
+const backEnd = ['Node', 'Express', 'MongoDB']
 let fullStack = frontEnd.concat(backEnd)
 console.log(fullStack)
