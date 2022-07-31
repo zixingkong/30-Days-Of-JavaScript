@@ -182,8 +182,81 @@ console.log(signIn('Alex', '123'))
 console.log(signIn('Alex', '123123'))
 // 3. The products array has three elements and each of them has six properties. 
 // a.Create a function called rateProduct which rates the product
+function rateProduct() {
+    let rateProductArr = []
+    products.forEach(function (item) {
+        let selectObj = {}
+        if (Array.isArray(item.ratings)) {
+            let rateArr = []
+            for (let i = 0; i < item.ratings.length; i++) {
+                rateArr.push(item.ratings[i].rate)
+            }
+            selectObj[item.name] = rateArr
+        } else {
 
+            selectObj[item.name] = item.ratings
+        }
+        rateProductArr.push(selectObj)
+    })
+    console.log(rateProductArr)
+}
+rateProduct()
 // b.Create a function called averageRating which calculate the average rating of a product
-
+function averageRating(productName) {
+    let average = 0
+    let product = products.find(item => item.name === productName)
+    if (product) {
+        if (product.ratings.length !== 0) {
+            let sum = 0
+            product.ratings.forEach(function (item) {
+                sum += item.rate
+            })
+            average = sum / product.ratings.length
+        }
+    } else {
+        return 'product not found'
+    }
+    return average
+}
+console.log(averageRating('mobile phone'))
+console.log(averageRating('Laptop'))
+console.log(averageRating('TV'))
+console.log(averageRating('Mac TV'))
 
 // 4. Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
+function likeProduct(product) {
+    let productArr = JSON.parse(JSON.stringify(products));
+    let productFound = productArr.find(item => item.name === product.name)
+    if (productFound) {
+        productRes = productArr.filter(function (item) {
+            return item.name !== product.name
+        })
+        return productRes
+    } else {
+        productArr.push(product)
+    }
+    return productArr
+}
+
+let product1 = {
+    _id: 'hedfcg',
+    name: 'Mac pro',
+    description: 'Smart TV:Procaster',
+    price: 400,
+    ratings: [{
+        userId: 'fg12cy',
+        rate: 5
+    }],
+    likes: ['fg12cy']
+}
+console.log(likeProduct(product1))
+let product2 = {
+    _id: 'eedfcf',
+    name: 'mobile phone',
+    description: 'Huawei Honor',
+    price: 200,
+    ratings: [1],
+    likes: []
+}
+console.log('='.repeat(50))
+console.log(likeProduct(product2))
