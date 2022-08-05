@@ -1,5 +1,4 @@
-const countries = [
-  {
+const countries = [{
     name: 'Afghanistan',
     capital: 'Kabul',
     languages: ['Pashto', 'Uzbek', 'Turkmen'],
@@ -2011,3 +2010,5 @@ const countries = [
     currency: 'Botswana pula'
   }
 ]
+
+module.exports = countries
