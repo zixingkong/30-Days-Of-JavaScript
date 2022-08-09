@@ -1,0 +1,31 @@
+Arguments: 
+  /Users/wyy/.nvm/versions/node/v16.0.0/bin/node /Users/wyy/.nvm/versions/node/v16.0.0/bin/yarn init
+
+PATH: 
+  /Users/wyy/code/tools/jdk1.8.0_312.jdk/Contents/Home/bin:/Users/wyy/.local/bin:/Users/wyy/.local/bin:/Users/wyy/code/tools/jdk1.8.0_312.jdk/Contents/Home/bin:/Users/wyy/.local/bin:/Users/wyy/.local/bin:/Users/wyy/code/tools/jdk1.8.0_312.jdk/Contents/Home/bin:/Users/wyy/.local/bin:/Users/wyy/.local/bin:/opt/local/bin:/opt/local/sbin:/Users/wyy/code/tools/jdk1.8.0_312.jdk/Contents/Home/bin:/Users/wyy/.nvm/versions/node/v16.0.0/bin:/Users/wyy/.local/bin:/Users/wyy/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/wyy/code/tools/allure-2.17.2/bin/:/Users/wyy/go/bin:/Users/wyy/code/tools/allure-2.17.2/bin/:/Users/wyy/code/tools/allure-2.17.2/bin/:/Users/wyy/code/tools/allure-2.17.2/bin/
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/wyy/code/github/javascript/30-Days-Of-JavaScript/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /Users/wyy/.nvm/versions/node/v16.0.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/wyy/.nvm/versions/node/v16.0.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/wyy/.nvm/versions/node/v16.0.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

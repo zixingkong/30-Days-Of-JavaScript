@@ -1,0 +1,20 @@
+{
+    "name": "30-days-of-javascript",
+    "version": "1.0.0",
+    "description": "30天学习Javascript",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zixingkong/30-Days-Of-JavaScript.git"
+    },
+    "author": "harveyy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zixingkong/30-Days-Of-JavaScript/issues"
+    },
+    "homepage": "https://github.com/zixingkong/30-Days-Of-JavaScript#readme"
+}
