@@ -195,4 +195,6 @@ const countries = [
 ]
 
 
-module.exports = countries
+module.exports = {
+  countries
+}
