@@ -16,5 +16,13 @@
     "bugs": {
         "url": "https://github.com/zixingkong/30-Days-Of-JavaScript/issues"
     },
-    "homepage": "https://github.com/zixingkong/30-Days-Of-JavaScript#readme"
+    "homepage": "https://github.com/zixingkong/30-Days-Of-JavaScript#readme",
+    "devDependencies": {
+        "cz-conventional-changelog": "^3.3.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
 }
